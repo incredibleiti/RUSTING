@@ -1,6 +1,6 @@
 # Project Overview
 
-This project is a simple Rust application that demonstrates the addition of two integers using a modular approach.
+This project is a simple Rust application that demonstrates the addition of two integers and includes a guessing game.
 
 ## Building the Project
 
@@ -20,9 +20,11 @@ To run the project, use the following command:
 cargo run
 ```
 
+The application will first perform the addition of two integers and then prompt the user to play a guessing game.
+
 ## Functionality
 
-The application consists of a main function located in `src/main.rs`, which imports the `add` module from `src/add.rs`. 
+The application consists of a main function located in `src/main.rs`, which imports the `add` module from `src/add.rs` and the `guess` module from `src/guess.rs`. 
 
 ### The `add` Function
 
@@ -42,6 +44,19 @@ In the `main` function, the `add` function is called to compute the sum of two i
 Now the value is: {sum}
 ```
 
+### The `guess` Function
+
+The `guess` function is defined as follows:
+
+```rust
+pub fn guess() {
+    let secret = rand::thread_rng().gen_range(1..=10);
+    // ...
+}
+```
+
+This function generates a random number between 1 and 10 and prompts the user to guess the number. It provides feedback on whether the guess was correct or not.
+
 ## UML Diagram
 
 ```plaintext
@@ -57,4 +72,12 @@ Now the value is: {sum}
 |      Add        |
 |-----------------|
 | + add(value1, value2) |
++-----------------+
+         |
+         |
+         v
++-----------------+
+|     Guess       |
+|-----------------|
+| + guess()       |
 +-----------------+
