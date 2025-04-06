@@ -1,13 +1,13 @@
-use std::io;
-use rand::Rng;
+use rand::{rng, Rng};
+
+use crate::util;
 
 pub fn guess() {
-    let secret = rand::thread_rng().gen_range(1..=10);
+    let mut rng = rng(); // instead of thread_rng()
+    let secret = rng.random_range(1..=10); // instead of gen_range()
     println!("Guess a number between 1 and 10:");
 
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).expect("Failed to read input");
-    let guess: i32 = input.trim().parse().expect("Enter a valid number");
+    let guess = util::take_input();
 
     if guess == secret {
         println!("Correct!");
