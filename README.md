@@ -1,6 +1,8 @@
 # Project Overview
 
 This project is a simple Rust application that demonstrates the addition of two integers and includes a guessing game.
+Over the time this repo will keep on evolving, and adding more samples into it.
+Goal is to make a descriptive demo tutorial which one can follow if coming from C++ or OOPs background
 
 ## Building the Project
 
