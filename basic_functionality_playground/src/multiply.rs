@@ -1,6 +1,6 @@
 use crate::util;
 
-pub fn multiple () {
+pub fn multiple() {
     println!("Enter the number 1");
     let x = util::take_input();
 

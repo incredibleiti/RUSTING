@@ -14,5 +14,4 @@ pub fn guess() {
     } else {
         println!("Wrong! Secret was: {}", secret);
     }
-
 }
