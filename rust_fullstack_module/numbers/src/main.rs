@@ -1,13 +1,5 @@
-fn print_number(num: Option<i32>) {
-    match num {
-        Some(n) => println!("I see number {}!", n),
-        None => println!("I see nothing"),
-    }
-}
 
 fn main() {
-    let x = Some(42);
-    let y = None;
-    print_number(x);
-    print_number(y);
+    //crate::module::function
+    numbers::say_hello(); //calling sequence test
 }
