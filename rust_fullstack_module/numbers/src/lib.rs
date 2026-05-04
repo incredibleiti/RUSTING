@@ -15,3 +15,9 @@ pub fn print_number_vector() {
         println!("{}", n);
     }
 }
+
+pub fn print_array_arguement(numbers:[u8;5]) {
+     for n in numbers.iter() {
+        println!("{}", n);
+    }
+}
