@@ -16,8 +16,17 @@ pub fn print_number_vector() {
     }
 }
 
+/* creating genenric function which can be used to print both vector and array wont work, why??? */
 pub fn print_array_arguement(numbers:[u8;5]) {
-     for n in numbers.iter() {
+    for n in numbers.iter() {
+        println!("{}", n);
+    }
+}
+
+/* Understanding array implement copy trait and vector does not using the example below */
+
+pub fn print_vector_arguement(numbers: Vec<u8>) {
+    for n in numbers {
         println!("{}", n);
     }
 }
