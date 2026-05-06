@@ -30,3 +30,9 @@ pub fn print_vector_arguement(numbers: Vec<u8>) {
         println!("{}", n);
     }
 }
+/* revising this function to take any array or vector of u8 */
+pub fn print_slice_arguement(numbers: &[u8]) {
+    for n in numbers {
+        println!("{}", n);
+    }
+}
