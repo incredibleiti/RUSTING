@@ -14,6 +14,6 @@ fn main() {
     let num_vec = vec![6,7,8,9,10];
     
     // numbers::print_vector_arguement(num_vec);
-    numbers::print_slice_arguement(num_array);
-    numbers::print_slice_arguement(num_vec);
+    numbers::print_slice_arguement(&num_array);
+    numbers::print_slice_arguement($num_vec);
 }
