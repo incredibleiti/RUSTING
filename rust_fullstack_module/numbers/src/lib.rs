@@ -17,7 +17,7 @@ pub fn print_number_vector() {
 }
 
 /* creating genenric function which can be used to print both vector and array wont work, why??? */
-pub fn print_array_arguement(numbers:[u8;5]) {
+pub fn print_array_arguement(numbers: [u8; 5]) {
     for n in numbers.iter() {
         println!("{}", n);
     }
